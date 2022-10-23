@@ -12,7 +12,7 @@ export function App() {
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
           <Route path="/movies" element={<MoviesPage />} />
-          <Route path="/:movieId" element={<MovieDetails />}>
+          <Route path="/:Id" element={<MovieDetails />}>
             <Route path="cast" element={<div>cast</div>} />
             <Route path="review" element={<div>MovieReviewBox</div>} />
           </Route>
