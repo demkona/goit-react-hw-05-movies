@@ -3,7 +3,7 @@ import { Container } from './components/Container/Container';
 import { Home } from './pages/Home/Home';
 import { Navigation } from "./components/Navigation/Navigation";
 import { MoviesPage } from "./pages/MoviesPage/MoviesPage"
-import { MovieDetailsPage } from './pages/MovieDetailsPage/MovieDetailsPage'
+import { MovieDetails } from './pages/MovieDetailsPage/MovieDetailsPage'
 
 export function App() {
   return (
@@ -12,7 +12,7 @@ export function App() {
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
           <Route path="/movies" element={<MoviesPage />} />
-          <Route path="/:movieId" element={<MovieDetailsPage />}>
+          <Route path="/:movieId" element={<MovieDetails />}>
             <Route path="cast" element={<div>cast</div>} />
             <Route path="review" element={<div>MovieReviewBox</div>} />
           </Route>

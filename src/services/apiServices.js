@@ -22,7 +22,7 @@ export async function fetchMoviesByQuery(query) {
     return data;
 }
 
-export async function fetchMovieById(id) {
+export async function MovieDetailsPage(id) {
     const data = await axios
         .get(`${BASE_URL}/movie/${id}?api_key=${BASE_KEY}&language=en-US`)
         .then(resp => resp.data);
